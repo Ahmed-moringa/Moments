@@ -36,7 +36,7 @@ class Category(models.Model):
 
 class Image(models.Model):
     
-    # image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='images/', blank=True, null=True)
     name = models.CharField(max_length=50)
     description = models.TextField()
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
@@ -62,7 +62,7 @@ class Image(models.Model):
         return images
  
     def  __str__(self):
-        return self.name_
+        return self.name
 
     def save_image(self):
         self.save()
