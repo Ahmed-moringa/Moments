@@ -1,4 +1,7 @@
-# Environments
-virtual
 *.pyc
+# Environments
+virtual/
+__pycache__/
+local_settings.py
+
 db.sqlite3

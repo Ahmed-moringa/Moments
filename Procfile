@@ -1,1 +1,1 @@
-web gunicorn momments.wsgi:application --log-file -
+web: gunicorn momments.wsgi:application --log-file -
